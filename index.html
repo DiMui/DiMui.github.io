@@ -152,27 +152,111 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-yolov5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/21/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2022/03/21/hello-world/" class="archive-article-date">
-  	<time datetime="2022-03-21T14:36:44.047Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-21</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+        <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="下载Anaconda"><a href="#下载Anaconda" class="headerlink" title="下载Anaconda"></a>下载Anaconda</h2><p>官网：<a target="_blank" rel="noopener" href="https://www.anaconda.com/">https://www.anaconda.com/</a></p>
+<p>下载安装完成后打开Anaconda Powershell Prompt<img src="F:\Blog\source_posts\yolov5.assets\QQ截图20210903230542.png"></p>
+<p>创建一个类似于工具箱</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n pytorch python=3.6</span><br></pre></td></tr></table></figure>
+
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207195656.png" alt="QQ截图20220207195656"></p>
+<p>激活工具箱</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207200037.png" alt="QQ截图20220207200037"></p>
+<p>成功进入</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207200102.png" alt="QQ截图20220207200102"></p>
+<p>接下来要往工具箱加入一些库（工具）</p>
+<h2 id="安装pytorch"><a href="#安装pytorch" class="headerlink" title="安装pytorch"></a>安装pytorch</h2><p>官网：<a target="_blank" rel="noopener" href="https://pytorch.org/">https://pytorch.org/</a></p>
+<p>下拉，按照图示选择</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207200504.png" alt="QQ截图20220207200504"></p>
+<p>如果安装错误，可以自行去网站下载所需的pytorch库版本，网址：<a target="_blank" rel="noopener" href="https://download.pytorch.org/whl/cu102/torch_stable.html">https://download.pytorch.org/whl/cu102/torch_stable.html</a></p>
+<p>可能要科学上网（科学上网github：<a target="_blank" rel="noopener" href="https://github.com/freefq/free%EF%BC%89">https://github.com/freefq/free）</a></p>
+<p>例如图片的pytorch版本为1.10.2 torchvision版本为0.11.3 torchaudio版本为0.10.2</p>
+<p>找到对应版本</p>
+<p><img src="E:\学习笔记\个人笔记\编程\yolov5.assets\QQ截图20220207200837.png" alt="QQ截图20220207200837"></p>
+<p><img src="E:\学习笔记\个人笔记\编程\yolov5.assets\QQ截图20220207200958.png" alt="QQ截图20220207200958"></p>
+<p><img src="E:\学习笔记\个人笔记\编程\yolov5.assets\QQ截图20220207200920-1644235777255.png" alt="QQ截图20220207200920"></p>
+<p>注：cp36意为Python版本为3.6版本</p>
+<p>下载完后进入到Anaconda Pwershell Prompt进行安装</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207201546.png" alt="QQ截图20220207201546"></p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207201558.png" alt="QQ截图20220207201558"></p>
+<p>路径要一样</p>
+<p>输入指令<strong>pip install</strong> 安装</p>
+<p>例如<img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207201655.png" alt="QQ截图20220207201655"></p>
+<h2 id="Pycharm里使用yolov5"><a href="#Pycharm里使用yolov5" class="headerlink" title="Pycharm里使用yolov5"></a>Pycharm里使用yolov5</h2><p>yolov5：<a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5">https://github.com/ultralytics/yolov5</a></p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207202100.png" alt="QQ截图20220207202100"></p>
+<p>下载完后直接在pycharm打开yolov5<img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207202616.png" alt="QQ截图20220207202616"></p>
+<p>右下角增加依赖</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207202650.png" alt="QQ截图20220207202650"></p>
+<p>安装所需要的包</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207202823.png" alt="QQ截图20220207202823"></p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207203248.png" alt="QQ截图20220207203248"></p>
+<p>运行程序即可</p>
+<p>注：运行时发现缺包就单独安装</p>
+<p>例如：</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207203455.png" alt="QQ截图20220207203455"></p>
+<p>安装即可</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ截图20220207203510.png" alt="QQ截图20220207203510"></p>
+<p>注：如果出现下面错误</p>
+<p><img src="F:\Blog\source_posts\yolov5.assets\QQ图片20220207203539.png" alt="QQ图片20220207203539"></p>
+<p>则复制下列代码到model&#x2F;common.py里</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class SPPF(nn.Module):</span><br><span class="line">    # Spatial Pyramid Pooling - Fast (SPPF) layer for YOLOv5 by Glenn Jocher</span><br><span class="line">    def __init__(self, c1, c2, k=5):  # equivalent to SPP(k=(5, 9, 13))</span><br><span class="line">        super().__init__()</span><br><span class="line">        c_ = c1 // 2  # hidden channels</span><br><span class="line">        self.cv1 = Conv(c1, c_, 1, 1)</span><br><span class="line">        self.cv2 = Conv(c_ * 4, c2, 1, 1)</span><br><span class="line">        self.m = nn.MaxPool2d(kernel_size=k, stride=1, padding=k // 2)</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        x = self.cv1(x)</span><br><span class="line">        with warnings.catch_warnings():</span><br><span class="line">            warnings.simplefilter(&#x27;ignore&#x27;)  # suppress torch 1.9.0 max_pool2d() warning</span><br><span class="line">            y1 = self.m(x)</span><br><span class="line">            y2 = self.m(y1)</span><br><span class="line">            return self.cv2(torch.cat([x, y1, y2, self.m(y2)], 1))</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="调用手机摄像头"><a href="#调用手机摄像头" class="headerlink" title="调用手机摄像头"></a>调用手机摄像头</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python detect.py --source http://admin:admin@xxx.xxx.xxx:xxxx # 填自己的ip地址和端口号</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/03/21/yolov5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="我的第一个博客（正在装饰中。。。）"><a href="#我的第一个博客（正在装饰中。。。）" class="headerlink" title="我的第一个博客（正在装饰中。。。）"></a>我的第一个博客（正在装饰中。。。）</h2><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
