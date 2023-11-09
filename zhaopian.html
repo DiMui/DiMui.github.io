@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>可可宝贝，两周年快乐！</title>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div style="display: flex;align-items: flex-end;">
+	<button type="button" class="btn btn-default btn-lg" onclick='location.href=("index.html")'>
+	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 上一页
+	</button>
+</div>
+<div id="drag-container">
+  <div id="spin-container">
+    <!-- 在这里添加图片或者mp4视频 -->
+    <img src="img/1.jpg" alt="">
+    <img src="img/2.jpg" alt="">
+    <img src="img/3.jpg" alt="">
+    <img src="img/4.jpg" alt="">
+    <img src="img/5.jpg" alt="">
+    <img src="img/6.jpg" alt="">
+    <img src="img/7.jpg" alt="">
+    <img src="img/14.jpg" alt="">
+    <img src="img/15.jpg" alt="">
+    <img src="img/16.jpg" alt="">
+    <!-- 带链接的图片 -->
+    <!-- <a target="_blank" href="7.png">
+		<img src="imgs/1.jpg">
+    </a> -->
+
+    <!-- 示例视频  -->
+    <video controls autoplay="autoplay" loop="loop" muted="muted" id="video">
+      <source src="img/1.mp4" type="video/mp4">
+    </video>
+	<video controls autoplay="autoplay" loop="loop" muted="muted" id="video">
+      <source src="img/2.mp4" type="video/mp4">
+    </video>
+
+    <!-- 背景文字描述 -->
+	<p style="font-size: 20px;">两周年快乐！陈可可宝贝</p>
+    
+	
+  </div>
+  <div id="ground"></div>
+</div>
+
+<div id="music-container"></div>	
+</div>
+<audio src="Music/A Thousand Years - Christina Perri.mp3" autoplay="autoplay" loop="loop" id="audio">
+	当前浏览器不支持audio
+</audio>
+<script  src="mean.js"></script>
+<script src="main.js" type="text/javascript" charset="utf-8"></script>
+<div style="display: flex;align-items: flex-end;">
+	<button type="button" class="btn btn-default btn-lg" onclick='location.href=("yanhua.html")'>
+	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 下一页
+	</button>
+</div>
+
+</body>
+</html>
